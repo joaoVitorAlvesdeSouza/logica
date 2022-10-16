@@ -1,0 +1,494 @@
+1. Considere as concatenações de símbolos do alfabeto da Lógica Proposicional
+dadas a seguir. Identique aquelas que são fórmulas da Lógica Proposicional.
+Considere a forma simplicada de representação de fórmulas, em que os
+símbolos de pontuação podem ser omitidos.
+
+(a) (P Q ∨ P10.000) não existe.
+(b) (P ∧ Q) → ((Q ↔ P) ∨ ¬¬R)
+(c) ¬¬P
+(d) ∨Q não existe.
+(e) (P ∧ Q) → ((Q ↔ ¬R))
+
+2. Responda as questáes a seguir, justicando suas respostas.
+
+(a) Existe fórmula sem símbolo de pontuação? 
+
+Existe. como P ↔ Q
+
+(b) Quantos tipos de símbolos possui o alfabeto da Lógica Proposicional?
+Quais são esses símbolos? 
+
+R= Sâo 5 tipos de conectivos proposicionais são eles: ¬ ∨ ∧ C ↔
+
+(c) Existe fórmula da Lógica Proposicional com algum conectivo, mas sem
+símbolo de pontuação?
+
+R= Não. Toda fórmula com conectivo possui símbolo de pontuação
+
+3. Determine o comprimento e as subfórmulas das fórmulas a seguir.
+(a) ((¬¬P ∨ Q) ↔ (P → Q)) ∧ P10.000
+
+R= ((¬¬P ∨ Q) ↔ (P → Q)) ∧ P10.000, ((¬¬P ∨ Q) ↔ (P → Q)), P10.000, (¬¬P ∨ Q), (P → Q), P, Q. 
+---------------------------------------------------------------------------------------------
+comprimento
+------------
+
+comp[¬¬P]+comp[Q]+1    comp[P]+comp[Q]+1+1+1+1
+comp[¬P]+1+1+1         comp[P]+1+1+1+1+1
+comp[P]+1+1+1+1        +1+1+1+1+1+1
++1+1+1+1+1
+= 11
+
+
+(b) P → ((Q → R) → ((P → R) → (P → R)))
+
+R=  P → ((Q → R) → ((P → R) → (P → R))), ((Q → R) → ((P → R) → (P → R))), P, (Q → R) → ((P → R), (P → R), P, R.
+---------------------------------------------------------------------------------------------------------------
+comprimento
+------------
+
+comp[p]+1 comp[Q]+1 comp[r]+1, comp[p]+1 comp[r]+1, comp[p]+1 comp[r]
+1+1+1+1+1+1+1+1+1+1+1+1+1 = 13
+
+
+(c) ((P → ¬P) ↔ ¬P) ∨ Q
+
+R= ((P → ¬P) ↔ ¬P) ∨ Q, ((P → ¬P) ↔ ¬P), Q, (P → ¬P), ¬P, P.
+-------------------------------------------------------------
+comprimento
+------------
+
+comp[p]+1 comp[¬p]+1 comp[¬p]+1 comp[q],
+1+1 comp[p]+1+1 comp[p]+1+1 comp[q]
+1+1+1+1+1+1+1+1+1 = 9
+
+
+(d) ¬(P → ¬P)
+
+ R= ¬(P → ¬P), P, ¬P.
+---------------------
+comprimento
+------------
+
+comp[p]+1 comp[¬p]+1
+1+1       comp[p]+1+1
+1+1+1+1+1 = 5         
+
+
+4. Elimine o maior número possível de símbolos de pontuação das fórmulas a
+seguir, mantendo a representação da fórmula original.
+(a) ((¬(¬P)) ↔ ((¬((¬(¬(P ∨ Q))) → R)) ∧ P))
+
+R = P ↔ (¬(P ∨ Q)→ R) ∧ P
+
+(b) (¬P → (Q ∨ R)) ↔ ((P ∧ Q) ↔ (¬¬R ∨ ¬P))
+
+R = (¬P → (Q ∨ R)) ↔ (P ∧ Q) ↔ (R ∨ ¬P)
+
+(c) ((P ∨ Q) → (P → (¬Q)))
+
+R = P ∨ Q → (P → ¬Q)
+
+5. Considere as concatenações de símbolos a seguir. A partir da introdução de
+símbolos de pontuação, identique quais fórmulas da Lógica Proposicional é
+possível obter.
+
+(a) P ∨ ¬Q → R ↔ ¬R = 
+
+P∨ ¬Q→R→ ¬R
+(P∨ ¬Q)→R→ ¬R
+(P∨ ¬Q)→(R→ ¬R)
+(P∨(¬Q→R))→ ¬R
+P∨(¬Q→(R→ ¬R))
+P∨ ¬(Q→R→ ¬R)
+
+(b) Q → ¬P ∧ Q 
+
+Q→ ¬P∧Q
+Q→(¬P∧Q)
+Q→ ¬(P∧Q)
+
+(c) ¬P ∨ Q ↔ Q 
+
+¬P∨Q↔Q
+(¬P∨Q)↔Q
+¬(P∨Q)↔Q
+¬(P∨Q↔Q)
+
+(d) ¬¬P → Q ↔ P ∧ P¬¬R = F
+
+6. (a) Escreva as fórmulas dos Exercícios 3 e 4 utilizando a notação polonesa.
+
+(b) Determine quais sequências de símbolos, indicadas a seguir, são fórmulas
+da Lógica Proposicional que utilizam a notação polonesa. No caso em que
+a sequência de símbolos é uma fórmula, reescreva-a utilizando a notação
+convencional.
+
+∨ → P Q ↔ R → ∨P Q¬S
+→↔ P Q∨ → P Q → ¬RR
+→ ¬P¬QR ∨ ∨P Q ∨ ¬R¬P
+↔→ ¬P ∨ QR ↔ ∧P Q ∨ ¬¬R¬P
+
+Exercício 3
+
+a)∧ ↔ ∨¬¬PQ→PQtrue
+b)→P→→QR→→PR→PR
+c)∨ ↔→P¬P¬PQ
+d)¬ →P¬P
+
+Exercício 4
+
+a)↔ ∧¬ → ¬¬∨PQRP¬¬P
+b)↔→ ¬P∨QR↔ ∧PQ∨¬¬R¬P
+c)→ ∨PQ→P¬Q
+
+
+7. Responda, justicando sua resposta.
+
+(a) É possível encontrar uma fórmula H, da Lógica Proposicional, escrita
+na notação convencional e que corresponda a duas fórmulas diferentes
+escritas na notação polonesa?
+
+(b) É possível encontrar uma fórmula H escrita na notação polonesa, que
+corresponda a duas fórmulas diferentes da Lógica Proposicional escritas
+na notação convencional?
+
+8. Faça os Exercícios 5 e 6 considerando a notação pós-xa, indicada pelas
+correspondências.
+(¬P) corresponde a P¬
+(P ∧ Q) corresponde a P Q∧
+(P ∨ Q) corresponde a P Q∨
+(P → Q) corresponde a P Q →
+(P ↔ Q) corresponde a P Q ↔
+
+9. Qual a paridade do número de símbolos de pontuação de uma fórmula da
+Lógica Proposicional?
+
+A paridade é par, pois por definição o símbolo de pontuação sempre abre "("e fecha ")".
+
+10. Seja H uma fórmula que não contém o conectivo ¬ .
+(a) Qual a paridade de comp[H]?
+
+comp[H] e um numero impar
+
+(b) Qual a relação entre comp[H] e o número de conectivos de H?
+
+comp[H] e o dobro do numero de conectivos de H mais um.
+
+-------------------------------------------------------------------------
+
+
+2. Comente, do ponto de vista lógico, a diferença entre sintaxe e semântica.
+
+R= sintaxe e uma unificação da linguagem diz respeito aos simbolos semantica e o significado
+ou interpretação dos objetos sintaticos
+
+
+3 A interpretação do conectivo ∨, na Lógica Proposicional, corresponde ao exato
+signicado da palavra ou? Justique sua resposta. Nessa análise, considere,
+por exemplo, o signicado da sentença: Vou ao teatro OU ao cinema como
+sendo verdadeiro. Desse fato, é possível concluir que irei ao teatro e ao cinema
+ao mesmo tempo? Faça uma análise análoga para os outros conectivos.
+
+R= Não. na logica para que uma disjunção seja verdadeira não e necessario nenhuma releção entre suas alternativas
+
+4. Sejam I uma interpretação e a fórmula H = (P → Q).
+
+(a) Se I[H] = T, o que se pode concluir a respeito de I[P] e I[Q]? Para I[H]=T, I[Q]=T ou  I[P]=F e I[Q]=F
+
+(b) Se I[H] = T e I[P] = T, o que se pode concluir a respeito de I[Q]?  para que  I[H]=T ↔ I[Q]=T
+
+(c) Se I[Q] = T, o que se pode concluir a respeito de I[H]? I[H]=T pois I[P] pode ser true ou flase que a formula cotinuar vedadeira
+
+(d) Se I[H] = T e I[P] = F, o que se pode concluir a respeito de I[Q]? I[H]=T pois I[Q] pode ser true ou flase que a formula cotinuar vedadeira
+
+(e) Se I[Q] = F e I[P] = T, o que se pode concluir a respeito de I[H]? I[H]=F
+
+5. Considere as fórmulas a seguir:
+
+(a) (¬P ∨ Q) ↔ (P → Q)
+
+| p | Q | ¬P| (P → Q) |  (¬P ∨ Q) | (¬P ∨ Q) ↔ (P → Q) |
+| T | T | F |    T     |     T     |          T          |
+| T | F | F |    T     |     F     |          F          |
+| F | T | T |    F     |     T     |          F          |
+| F | F | T |    T     |     T     |          T          |
+
+(b) P → ((Q → R) → ((P → R) → (P → R)))
+
+| p | Q | R | (Q → R) |  (P → R) | P → ((Q → R) → ((P → R) → (P → R))) |
+| T | T | T |    T    |     T     |                  T                      |
+| T | T | F |    F    |     F     |                  F                      |
+| T | F | T |    T    |     T     |                  T                      |
+| T | F | F |    T    |     F     |                  F                      |
+| F | T | T |    T    |     T     |                  T                      |
+| F | F | T |    T    |     T     |                  T                      |
+| F | T | F |    F    |     T     |                  T                      |
+| F | F | F |    T    |     T     |                  T                      |
+     
+
+(c) (P → ¬Q) ↔ ¬P
+
+| p | ¬Q| ¬P| (P → ¬Q) | (P → ¬Q) ↔ ¬P |  
+| T | T | F |    T     |         F       |
+| T | F | F |    T     |         F       | 
+| F | T | T |    F     |         T       |
+| F | F | T |    T     |         T       |
+
+
+(d) (Q → ¬P)
+
+| ¬p| Q | (Q → ¬P) |
+| T | T |     T     |
+| T | F |     F     |
+| F | T |     T     |
+| F | F |     T     |
+
+
+(e) (P → (Q → R)) ↔ ((P ∧ Q) → R)
+
+| p | Q | R | (Q → R) |  (P ∧ Q) | (P → (Q → R)) ↔ ((P ∧ Q) → R) |
+| T | T | T |    T    |     T     |                  T              |
+| T | T | F |    F    |     T     |                  F              |
+| T | F | T |    T    |     F     |                  T              |
+| T | F | F |    T    |     F     |                  T              |
+| F | T | T |    T    |     F     |                  F              |
+| F | F | T |    T    |     F     |                  T              |
+| F | T | F |    F    |     F     |                  T              |
+| F | F | F |    T    |     F     |                  T              |
+     
+
+(f) (R ∧ ¬P) ↔ (P ∧ R)
+
+| R | P | ¬P| (R ∧ ¬P) | (P ∧ R) |  (R ∧ ¬P) ↔ (P ∧ R) |
+| T | T | F |    F     |    T    |            F         |
+| T | F | T |    T     |    F    |            F         |
+| F | T | F |    F     |    F    |            T         |
+| F | F | T |    F     |    F    |            T         |
+
+(g) (P → Q) → (((P ∧ Q) ↔ P) ∧ ((P ∨ Q) ↔ Q))
+
+| P | Q | (P → Q) | (P ∧ Q) ↔ P) |  (P ∨ Q) ↔ Q) |
+| T | T |    T     |       T      |        T       |
+| T | F |    F     |       F      |        F       |      
+| F | T |    T     |       T      |        T       |       
+| F | F |    T     |       F      |        T       |      
+
+
+(h) (false → Q) ↔ R
+
+| FLASE | Q | R | (false → Q) ↔ R | 
+|   F   | T | T |         T        |   
+|   F   | T | F |         F        |        
+|   F   | F | T |         T        |      
+|   F   | F | F |         F        |        
+
+(i) true → Q
+
+|  TRUE | Q | true → Q | 
+|   T   | T |     T    |   
+|   T   | T |     T    |        
+|   T   | F |     F    |      
+|   T   | F |     F    |        
+
+
+(j) (P → false) ↔ R
+
+| FLASE | P | R | (P → false) ↔ R | 
+|   F   | T | T |         F        |   
+|   F   | T | F |         T        |        
+|   F   | F | T |         F        |      
+|   F   | F | F |         F        | 
+
+(k) P → true
+
+|  TRUE | P | P → true | 
+|   T   | T |     T    |   
+|   T   | T |     T    |        
+|   T   | F |     F    |      
+|   T   | F |     F    | 
+
+
+. Determine a tabela-verdade associada a cada fórmula.
+
+. Seja I uma interpretação tal que I[P] = T, I[Q] = F e I[R] = F, o que
+podemos concluir a respeito do valor de verdade de cada fórmula?
+
+
+
+
+. Seja J uma interpretação que interpreta todas as fórmulas anteriores
+como sendo verdadeiras. Além disso, J[P] = T. O que podemos concluir
+a respeito de J[Q] e J[R], em cada um dos casos?
+
+
+
+
+6. Seja I uma interpretação tal que: I[P → Q] = T. O que se pode deduzir a
+respeito dos resultados das interpretações a seguir?
+
+Para I[P → Q] = T. I[P]=T e/ou I[Q]=T,
+
+(a) I[(P ∨ R) → (Q ∨ R)]  para ser true, I[Q]=T     
+
+(b) I[(P ∧ R) → (Q ∧ R)]  para ser true, I[Q]=T e I[R]=T  
+
+(c) I[(¬P ∨ Q) → (P ∨ Q)] nada 
+
+Repita este exercício supondo I[P → Q] = F.
+
+Para I[P → Q] = T. I[P]=F e I[Q]=T,
+
+(a) I[(P ∨ R) → (Q ∨ R)]  nada  
+
+(b) I[(P ∧ R) → (Q ∧ R)]  nada
+
+(c) I[(¬P ∨ Q) → (P ∨ Q)]  flase
+
+
+7. Seja I uma interpretação tal que: I[P ↔ Q] = T. O que podemos deduzir a
+respeito dos resultados das interpretações a seguir?
+
+Para I[P ↔ Q] = T. I[P]=F e I[Q]=F, ou I[P]=T e I[Q]=T
+
+(a) I[¬P ∧ Q] flase 
+
+(b) I[P ∨ ¬Q]  true
+
+(c) I[Q → P]   true
+
+(d) I[(P ∧ R) ↔ (Q ∧ R)] para ser true I[R]=T
+
+(e) I[(P ∨ R) ↔ (Q ∨ R)] true
+
+Repita este exercício supondo I[P ↔ Q] = F.
+
+Para I[P ↔ Q] = F. I[P]=T e I[Q]=F, ou I[P]=F e I[Q]=T
+
+a) I[¬P ∧ Q] para ser true I[¬P]=T e I[Q]=T.
+
+(b) I[P ∨ ¬Q]  para ser true I[P]=T e/ou I[¬Q]=T.
+
+(c) I[Q → P]   para ser true I[¬P]=T e I[Q]=T.
+
+(d) I[(P ∧ R) ↔ (Q ∧ R)] para ser true I[R]=T e I[¬P]=T e I[Q]=T.
+
+(e) I[(P ∨ R) ↔ (Q ∨ R)] para ser true I[R]=T e/ou I[¬P]=T e I[Q]=T.
+
+
+8. Seja H a fórmula a seguir e I uma interpretação.
+H = ((P → Q) → (((P ∧ Q) ↔ P) ∧ ((P ∨ Q) ↔ Q))) → P
+
+(a) Se I[P] = F, o que se pode concluir a respeito de I[H]? 
+
+se I[P] = F e I[Q]=T a formula de I[H]=F
+
+(b) Se I[P] = T, o que se pode concluir a respeito de I[H]?
+
+ se I[P] = T e I[Q]=T a formula de I[H]=T
+
+
+10. Escreva as sentenças a seguir utilizando a linguagem da Lógica Proposicional.
+Utilize símbolos proposicionais para representar proposições.
+
+(a) José virá à festa e Maria não gostará, ou José não virá à festa e Maria
+gostará da festa.
+
+P = jose vira a festa Q= maria nn gostara ¬P= jose nao vira a festa ¬Q = maria gotara
+
+(P → Q) ∧ (¬P → ¬Q)
+
+(b) A novela será exibida, a menos que seja exibido o programa político.
+
+p = novela sera exibida  R = exibido programa politico 
+
+P ↔ R
+
+(c) Se chover, irei para casa, caso contrário, irei no escritório.
+
+P= se chover Q = irei a casa R= irei no escritorio
+
+(P → Q) → (¬P → R)
+
+(d) Se Maria é bonita, inteligente e sensível e se Rodrigo ama Maria, então
+ele é feliz.
+
+Q = se Se Maria é bonita, inteligente e sensível P= Rodrigo ama Maria R= ele é feliz.
+
+(Q ∧ P) → R
+
+(e) Se sr. Oscar é feliz, sra. Oscar é infeliz, e se sra. Oscar é feliz, sr. Oscar
+é infeliz.
+
+P= Se sr. Oscar é feliz Q= sra. Oscar é infeliz
+
+(P → Q) → (¬P → ¬Q)
+
+(f) Maurício virá à festa e Kátia não virá ou Maurício não virá à festa e
+Kátia ficará infeliz.
+
+P= Maurício virá à festa Q= Kátia não virá R= ficara infeliz
+
+(P → Q) v ((¬P→Q)→R)
+
+
+12. A sentença Todo homem é mortal pode ser representada na Lógica Proposicional, simplesmente fazendo: P = Todo homem é mortal. Assim, nesse
+caso, a sentença é representada pelo símbolo P. Entretanto, podemos dizer
+que essa não é uma representação que considera os detalhes da sentença, pois
+ela representa a sentença como um todo.
+Represente as sentenças a seguir utilizando a linguagem da Lógica Proposicional. Em cada caso, a sua representação considera elementos internos da
+sentença? Nos casos em que não for, justique.
+
+(a) Possivelmente, irei ao cinema.
+
+p= irei ao cinema 
+
+(b) Fui gordo, hoje sou magro.
+
+Q= fui gordo P=  hoje sou magro  P → Q
+
+(c) Existe no curso de Ciência da Computação um aluno admirado por todos.
+
+Q = Existe no curso de Ciência da Computação R= aluno admirado por todos.
+
+(d) Existe um aluno em minha sala que não gosta de nenhum colega.
+
+Q = Existe um aluno em minha sala  R= não gosta de nenhum colega.
+
+(e) Existe aluno de Ciência da Computação que é detestado por seus colegas.
+
+Q=  Existe aluno de Ciência da Computação P= detestado por seus colegas.
+
+(f) Necessariamente algum político é desonesto.
+
+Q= Necessariamente algum político P= desonesto.
+
+(g) Amanhã irei ao cinema e depois irei ao teatro.
+
+Q= irei ao cinema P= irei ao teatro.
+
+Q= irei ao cinema  R= irei ao teatro.
+
+(h) Quase todo político é desonesto.
+
+Q=  Quase todo P= político é desonesto.
+
+(i) Adalton sempre foi amigo de João Augusto.
+
+P= Adalton sempre foi amigo Q=  João Augusto.
+
+(j) Toda regra tem exceção.
+
+R= Toda regra tem exceção.
+
+(k) Quase todo funcionário da Sigma é um talento.
+
+Q=  Quase todo funcionário da Sigma P= um talento.
+
+(l) Poucos funcionários da Sigma não são empreendedores.
+
+P=  Poucos funcionários da Sigma Q= não são empreendedores.
+
+(m) O presidente da Sigma é admirado por seus colaboradores.
+
+P=  O presidente da Sigma Q= admirado por seus colaboradores.

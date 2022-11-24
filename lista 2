@@ -1,0 +1,108 @@
+LOGICA
+-------------------
+
+1) Sejam A e B fórmulas. Classifique as afirmações a seguir em verdadeiras ou falsas, 
+justificando sua resposta.
+
+a) Se A é satisfatível, então ¬A é satisfatível T
+
+b) A é tautologia se ¬A é contraditória T
+
+c) A é tautologia se A é satisfatível T
+
+d) Se A é contraditória, então ¬A é satisfatível F
+
+e) Se A |= B e A é tautologia implica que B é tautologia T
+
+f) Se A |= B e B é tautologia implica que A é tautologia T
+
+2) Utilizando todos os métodos de validação vistos em sala, diga se cada sentença abaixo
+é contraditória, satisfatível ou tautologia
+
+p → p = satifativel i[p]=T ou i[p]=F
+
+p → ¬p = satifativel quando i[p]= T i[¬p]=F
+
+¬p → p = satifativel quando i[¬p]= T i[p]=F
+
+p ⇔ p = a satifativel
+
+p→(Q → P) = satifativel pois i[Q] pode ser T
+
+p→(Q v P) ∧ (p∧(Q v ¬R))= contraditoria
+
+(p v R) ∧ (Q v R) → (p v Q) v R = tautologia
+
+p → Q → (p ∧ Q) = tautologia 
+
+
+
+
+3) Construa a árvore semântica associada à fórmula abaixo e diga se ela é tautologia, 
+satisfatível ou contraditória.
+
+H = (p ∧ Q) → (R ∧ Q)
+
+Se for possível, forneça uma interpretação I tal que I[H] = F
+
+
+
+
+                                p
+                         p =t      p = f
+                   q=t      q= f         T
+
+             r = t    r = f
+
+              T          T
+
+
+TAUTOLOGIA 
+
+
+5) Levando em conta o que aprendeu sobre equivalências e em particular sobre as Leis 
+de De Morgan, escreva a negação das seguintes proposições compostas: 
+
+a) Se a comida é boa, então o serviço é excelente. 
+r= se a comida nao e bom a serviço nao e bom
+
+b) Ou a comida é boa, ou o serviço é excelente. 
+r= a comida nao e boa e o serviço nao e exelente
+
+c) Ou a comida é boa e o serviço é excelente, ou então está caro. 
+r= a comida nao e boa e o serviso nao e exelente ou e caro
+
+d) Nem a comida é boa, nem o serviço é excelente. 
+r= a comida e boa e o serviço e exelente
+
+e) Se é caro, então a comida é boa e o serviço é excelente.
+r= nao e caro entao a comida nao e boa e o serviço nao e exelente
+
+
+6) Para as seguintes fórmulas, responda: Seja J uma interpretação que interpreta todas as 
+fórmulas como sendo verdadeiras. Além disso, J[P] = T. O que se pode concluir a 
+respeito de J[Q] e J[R], em cada um dos casos?
+
+A) para que i[H]=T, i[Q]=T
+
+B) não impotar os valores de i[Q] e i[R]
+
+C) o valor de i[Q]= T para a formula ser T
+
+D) i[Q]=F pra i[H]=T
+
+E) i[Q]= T e i[R] = T
+
+F) e uma tautologia os valores de  Q e R nao impotar
+
+
+7. Faça a simplificação lógica das fórmulas abaixo utilizando as equivalências clássicas.
+Obs: Equivalências clássicas abaixo.
+
+b) ((¬ (P ∧ ¬ Q)) ∧ (¬ (Q ∧ ¬ P)))
+
+8. Demonstre, com o auxílio das equivalências clássicas, que as fórmulas abaixo são 
+equivalentes. Obs: Equivalências clássicas abaixo.
+
+a) (R → P) ∧ (R → Q) e (¬P ∨ ¬Q) → ¬R 
+b) (¬(P → Q) ∨ S) ∧ ¬P e (P ∨ S) ∧ ((Q → S) ∧ ¬P
